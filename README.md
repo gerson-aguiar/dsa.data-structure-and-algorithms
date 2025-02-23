@@ -1,4 +1,3 @@
-# Hackerrank
 # Coding Challenges and Interview Preparation
 
 This repository contains solutions, notes, and resources related to competitive programming, coding challenges, and interview preparation. It is organized by platforms, problem types, and topics to make it easy to navigate.
