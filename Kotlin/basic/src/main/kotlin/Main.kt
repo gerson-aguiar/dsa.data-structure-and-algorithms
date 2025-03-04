@@ -15,7 +15,7 @@ fun greet(name: String = "Guess") {
     println("Hello, $name!")
 }
 
-fun getStatus(code: Int) = when(code) {
+fun getStatus(code: Int) = when (code) {
     200 -> "OK"
     404 -> "Not found"
     500 -> "Server Error"
@@ -25,29 +25,29 @@ fun getStatus(code: Int) = when(code) {
 fun main() {
     sayHello("Gerson")
 
-    println(sum(1,2))
+    println(sum(1, 2))
 
-    println(multiply(2,3))
+    println(multiply(2, 3))
 
     greet()
 
     val age = 29
-    val canDrive = if(age>=18) "Can drive" else "Can't drive"
+    val canDrive = if (age >= 18) "Can drive" else "Can't drive"
     println(canDrive)
 
     println(getStatus(404))
 
-    for (i in 1..5){
+    for (i in 1..5) {
         println(i)
     }
 
     var count = 3
-    while (count > 0){
+    while (count > 0) {
         println("Count: $count")
         count--
     }
 
-    val numbers = listOf(1,2,3,4,5)
+    val numbers = listOf(1, 2, 3, 4, 5)
     println(numbers[2])
 
     val evens = numbers.filter { it % 2 == 0 }
@@ -75,6 +75,7 @@ fun main() {
 
     //
     data class User(val name: String, val age: Int)
+
     val user = User("Gerson", 29)
     println(user)
 
@@ -83,7 +84,26 @@ fun main() {
     println(name?.length ?: "Name is null")
 
     // lambda
-    val add = {a: Int, b: Int -> a + b}
-    println(add(1,2))
+    val add = { a: Int, b: Int -> a + b }
+    println(add(1, 2))
+
+    // Extension Function
+    fun String.shout() = this.uppercase() + "!!!"
+    println("Gerson".shout())
+
+    // Set
+    val uniqueNumbers = setOf(1, 2, 3, 4, 4, 4, 44, 44)
+    println("Unique Numbers: $uniqueNumbers")
+
+    // Map
+    val scores = mapOf("Gerson" to 29, "Maria" to 27)
+    println("Scores: $scores")
+
+    // Try/Catch
+    try {
+        val result = 10 / 0
+    } catch (ex: ArithmeticException) {
+        println("You can't divide by zero! - ${ex.message}")
+    }
 
 }
