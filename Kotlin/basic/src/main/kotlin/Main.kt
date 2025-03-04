@@ -11,6 +11,10 @@ fun sum(a: Int, b: Int): Int {
 
 fun multiply(a: Int, b: Int) = a * b
 
+fun greet(name: String = "Guess") {
+    println("Hello, $name!")
+}
+
 fun main() {
     sayHello("Gerson")
 
@@ -18,5 +22,6 @@ fun main() {
 
     print(multiply(2,3))
 
+    greet()
 
 }
