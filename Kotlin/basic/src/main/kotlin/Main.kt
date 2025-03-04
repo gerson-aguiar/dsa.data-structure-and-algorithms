@@ -9,8 +9,14 @@ fun sum(a: Int, b: Int): Int {
     return a + b
 }
 
+fun multiply(a: Int, b: Int) = a * b
+
 fun main() {
     sayHello("Gerson")
 
     print(sum(1,2))
+
+    print(multiply(2,3))
+
+
 }
