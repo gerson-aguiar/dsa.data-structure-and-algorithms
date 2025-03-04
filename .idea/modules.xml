@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/dsa.data-structure-and-algorithms.iml" filepath="$PROJECT_DIR$/dsa.data-structure-and-algorithms.iml" />
-      <module fileurl="file://$PROJECT_DIR$/real/real.iml" filepath="$PROJECT_DIR$/real/real.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OLD-2016-solutions/real/real.iml" filepath="$PROJECT_DIR$/OLD-2016-solutions/real/real.iml" />
     </modules>
   </component>
 </project>
