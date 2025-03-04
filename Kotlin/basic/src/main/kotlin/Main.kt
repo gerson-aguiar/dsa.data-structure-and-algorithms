@@ -52,4 +52,38 @@ fun main() {
 
     val evens = numbers.filter { it % 2 == 0 }
     println(evens)
+
+    //
+    val squares = numbers.map { it * it }
+    println(squares)
+
+    //
+    class Person(val name: String, val age: Int)
+
+    val person = Person("Gerson", 29)
+    println(person.name)
+
+    //
+    class Car(val brand: String) {
+        fun honk() {
+            println("Tuut, $brand")
+        }
+    }
+
+    val car = Car("Ford")
+    car.honk()
+
+    //
+    data class User(val name: String, val age: Int)
+    val user = User("Gerson", 29)
+    println(user)
+
+    //
+    var name: String? = null
+    println(name?.length ?: "Name is null")
+
+    // lambda
+    val add = {a: Int, b: Int -> a + b}
+    println(add(1,2))
+
 }
